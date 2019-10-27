@@ -9,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-description.component.css']
 })
 export class ProductDescriptionComponent implements OnInit {
-
-  constructor(private _productService) { }
+  
+  constructor( private _productService: ProductService) { }
 
   ngOnInit() {
   }
