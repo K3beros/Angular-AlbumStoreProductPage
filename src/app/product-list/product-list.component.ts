@@ -12,10 +12,10 @@ import { Component, OnInit } from '@angular/core';
 export class ProductListComponent implements OnInit {
 products: Product[];
   
-  constructor(private _prodctService: ProductService) { }
+  constructor(private _productService: ProductService) { }
 
   ngOnInit() {
-    this._prodctService.getProducts().subscribe(response => this.products = response)
+    this._productService.getProducts().subscribe(response => this.products = response)
   }
 
 }
